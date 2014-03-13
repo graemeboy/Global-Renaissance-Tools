@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>"Heat Map" example for Global Renaissance Project</title>
+    <meta name="description" content="I used data from the Global Renaissance eBooks corpus to generate 
+    data relating to how often certain place names were mentioned in the titles and 
+    descriptions of each of the works it contains. In this example, I use only a few heavy-hitting
+    places, inluding, for example, Alexandria, China, etc.">
+    <meta name="author" content="Graeme Boy (graemeboy@gmail.com)">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Create a panel of options that we can use to change the map and see what it looks like
+        with various options. -->
+
+    <div id="panel">
+        <button onclick="toggleHeatmap()">Toggle Heatmap</button> <button onclick="toggleMapStyle()">Toggle Style</button> <button onclick="changeGradient()">Change gradient</button>
+    </div>
+
+    <div id="map-canvas"></div><script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization" type="text/javascript">
+</script><!-- Load the Google Maps API -->
+    <script type="text/javascript" src="./script.js">
+</script><!-- Load our script file that does all of the work -->
+</body>
+</html>
